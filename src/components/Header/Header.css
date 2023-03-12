@@ -1,0 +1,13 @@
+.header{
+    box-sizing: border-box;
+    max-height: 5vh;
+    justify-content: center;
+}
+.main-heading{
+    display: flex;
+    align-items: center;
+}
+.header-logo{
+    height: 3vh;
+    box-sizing: border-box;
+}
