@@ -9,7 +9,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding-left: 10rem !important;
 }
 .landing-img-caption{
@@ -18,26 +18,27 @@
     text-align: justify;
     margin: 1rem !important;
 }
-.landing-img-caption-heading{
+.landing-page-caption-heading{
     font-weight: bold !important;
-}
-.landing-img-caption-text{
-    font-weight: 500 !important;
+    margin-left: 0 !important;
 }
 .landing-page-img{
     height: 60vh;
     width: 60vw;
     align-self: center;
 }
+.link-btn{
+    text-decoration: none;
+}
 .get-started-btn{
     width: 300px;
     font-size: 1.1rem !important;
     align-self: flex-start;
-    margin-top: .5rem !important;
+    margin-top: 1rem !important;
 }
 .img-wrap{
     width: 50vw;
-    height: 100%;
+    height: 90%;
     background: url('../../assets/images/landing-page.jpg');
     background-position: center;
     background-size: cover;

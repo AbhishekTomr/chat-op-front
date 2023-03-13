@@ -1,4 +1,33 @@
 .login-panel{
     width: 100% !important;
-    height: 100% !important;
+    height: 95vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.form-wrap{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 1rem;
+}
+.user-icon{
+    align-self: center;
+}
+.form-heading{
+    text-align: center;
+    text-transform: capitalize;
+}
+.form-section{
+    margin: .5rem auto;
+    width: 300px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.input-text{
+    width: 100%;
+    margin: .3rem auto;
+}
+.form-btn{
+    width: 100%;
+}
+

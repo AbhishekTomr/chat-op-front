@@ -5,6 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 const logo = require('../../assets/logo/logo.png');
 
@@ -17,10 +18,14 @@ const Header:React.FC<IHeader> = (props:IHeader) => {
     <Box sx={{ flexGrow: 1 }} className='header-wrap'>
       <AppBar position="static" className='header'>
         <Toolbar className='toolbar'>
-          <Typography className='main-heading' variant="h6" component="div" sx={{ flexGrow: 1 }}>
+        <Typography className='main-heading' variant="h6" component="div" sx={{ flexGrow: 1 }}>
+        <Link to={'/'} className='link-btn'>
             <img src={logo} alt="logo" className='header-logo'/>
-          </Typography>
+        </Link>
+        </Typography>
+          <Link to={'/sign-in'} className='link-btn'>
           <Button color="inherit">Login</Button>
+          </Link>       
         </Toolbar>
       </AppBar>
     </Box>

@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import './LandingPage.css';
 import Typography from '@mui/material/Typography';
 import { Button } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 interface ILandingPage{
 
@@ -16,7 +17,7 @@ const LandingPage:React.FC<ILandingPage> = (props:ILandingPage) => {
         <Typography className='landing-page-caption landing-page-caption-text'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni odit
          neque voluptatum fugit veniam quasi reprehenderit vitae excepturi deserunt?
           Rerum eveniet blanditiis tenetur soluta sunt sint veniam ipsa magnam totam.</Typography>
-          <Button className='get-started-btn' variant="contained">Get Started</Button>
+          <Link to='sign-in' className='link-btn'><Button className='get-started-btn' variant="contained">Get Started</Button></Link>
       </Box>
       <Box className='img-wrap'>
         
