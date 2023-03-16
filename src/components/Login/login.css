@@ -19,15 +19,35 @@
 }
 .form-section{
     margin: .5rem auto;
-    width: 300px;
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
+    min-width: 300px;
+}
+.row{
+    margin: .3rem auto !important;
+    width: 100%;
+    display: flex;
 }
 .input-text{
     width: 100%;
-    margin: .3rem auto;
+    margin: 0 .3rem !important;
 }
 .form-btn{
-    width: 100%;
+    width: 100% !important;
+    text-transform: capitalize;
+}
+.helper-text{
+    padding: 0 .3rem;
+}
+.link{
+    color: #0e519d;
+    margin: 0 .3rem;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+}
+.link:hover{
+    cursor: pointer;
 }
 
